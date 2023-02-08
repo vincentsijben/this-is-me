@@ -1,0 +1,621 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Presentation Vincent Sijben - reveal.js</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-background-image="assets/datavis.jpg">
+				<h2>Data Visualisatie</h2>
+			</section>
+			<section>
+				<section>
+					<h2>Data + Art</h2>
+					<p>Data Visualisation, Generative Design, Data Art</p>
+					<img class="r-stretch" src="assets/bravestmoment.jpg" alt="">
+					<aside class="notes">
+						We gaan een aantal weken intensief aan de slag met nieuwe materie, dus om de drempel laag te
+						houden om mij te contacten,
+						wil ik even kort wat over mezelf vertellen, zodat we daarna snel aan de slag kunnen met de fun
+						dingen.
+
+						Ik heb wat slides bij elkaar gesprokkeld die ik 1e jaars studenten van de kunst academie toon.
+
+
+						Ik geef vooral les aan 1e jaars studenten CMD en Visuele Communicatie van de kunstacademie. Ik
+						geef daar creative coding.
+
+						Ik hou me vooral bezig met dingen op het web. Ik geef voornamelijk les in het java en javascript
+						ecosysteem. Wij zullen later aan de slag gaan met d3, dat is een uitbreiding oftewel library
+						voor javascript.
+						P5 is ook zo’n library en gebruiken we bij Maastricht Institute of Arts voornamelijk om
+						creatievelingen kennis te laten maken met programmeren.
+						Om applicaties te maken gebruik ik voornamelijk NodeJS en we brengen ook de fysieke wereld naar
+						de studenten in de vorm van Arduino microcontrollers.
+					</aside>
+				</section>
+				<section>
+					<h2>@home</h2>
+
+					<img class="r-stretch" src="assets/beamer.jpg" alt="">
+					<aside class="notes">
+						Ik hou van coderen en knutselen, alleen niet van afmaken :)
+					</aside>
+				</section>
+				<section>
+					<h2>@home 2</h2>
+					<img class="r-stretch" src="assets/greenscreen.jpg" alt="">
+					<aside class="notes">
+						Vincent dus, 31 en een dochter van 10. Ik zit niet in een midlife crisis, maar heb wel een motor
+						Suzuki Bandit 1200s.
+
+						In Corona tijd continu bezig om video materiaal op te nemen, live te streamen en het
+						afstandsonderwijs steeds te verbeteren.
+					</aside>
+				</section>
+				<section>
+					<h2>Zuyd</h2>
+					<img class="r-stretch" src="assets/afgestudeerd.jpg" alt="">
+					<aside class="notes">
+						Ik heb technische informatica gestudeerd aan de TUE in Eindhoven, maar na 4 maanden kwam ik
+						erachter dat ik te gevoelig was voor de GTA2 spelende medestudenten in de collegezalen.
+						Ben toen hogere informatica gaan studeren bij Zuyd in Heerlen en in 2004 afgestudeerd.
+						Toen 11 jaar in het bedrijfsleven gewerkt en toen de overstap naar het onderwijs gemaakt.
+					</aside>
+				</section>
+				<section>
+					<h2>Music is life</h2>
+					<img class="r-stretch" src="assets/bigband.jpg" alt="">
+					<aside class="notes">
+						Muziek is wel een dingetje in mn leven. Ik speel 35 jaar saxofoon, met een paar tours in Amerika
+						met bigbands.
+						Nu op een laag pitje, en speel alleen nog maar als mensen ziek veel geld voor me betalen.
+					</aside>
+				</section>
+				<section>
+					<h2>Sports</h2>
+					<img class="r-stretch" src="assets/parasailing.jpg" alt="">
+					<aside class="notes">
+						Ik surf gemiddeld zo’n 8 uur per dag al bijna 30 jaar
+						Ik zag al wat sportfotos voorbij komen in #offtopic... Zitten er hier verslaafde sporters in de
+						klas?
+					</aside>
+				</section>
+				<section>
+					<h2>Ontspanning</h2>
+					<aside class="notes">
+						Ontspanning, zeer belangrijk. Ik hou wel van een potje gamen. Als ik er aan toe kom met deze
+						drukke baan.
+						Voor de mensen die afgezeikt willen worden met een potje CoD of Tetris, lets go!
+					</aside>
+				</section>
+				<section>
+					<img src="assets/cod.jpg" alt="">
+				</section>
+				<section>
+					<img src="assets/tetris.png" alt="">
+				</section>
+				<section>
+					<img src="assets/netflix.jpg" alt="">
+					<aside class="notes">
+						Ik ben een redelijke Netflix addict. Dus gooi zeker tijdens de les wat series over de schutting
+						die de moeite waard zijn om te kijken.
+						Wel aub series die klaar zijn of waar al een paar seizoenen van online staan. Ik ga niet een
+						week wachten op een nieuwe aflevering.
+					</aside>
+				</section>
+				<section>
+					<h2>Personal heroes</h2>
+
+					<aside class="notes">
+						Een paar van mijn persoonlijke helden
+						Vitas
+						Jo Bonten
+						Maurice Moss (IT Crowd)
+					</aside>
+				</section>
+				<section>
+					<img src="assets/vitas.jpg" alt="">
+				</section>
+				<section>
+					<img src="assets/jobonten.jpg" alt="">
+				</section>
+				<section>
+					<img src="assets/mauricemoss.jpg" alt="">
+				</section>
+				<section data-background-color="#020315">
+					<h2 class="r-fit-text">* Person tells me their name *</h2>
+					<h2>My brain:</h2>
+					<img src="assets/remembering-names.jpg" alt="">
+					<aside class="notes">
+						Ieder jaar 160 nieuwe namen leren, en ik heb een zeer slecht geheugen.
+						En de namen worden steeds exotischer, maar ook mooier.
+					</aside>
+				</section>
+
+			</section>
+			<section>
+				<section data-background-image="assets/damn-good-advice.jpg"></section>
+				<section data-background-color="#2d3549">
+					<img src="assets/brute-force.png" alt="">
+					<h2 class="fragment">uDBr*9vF7o3RPjDJ.7x!JgD</h2>
+				</section>
+				<section data-background-image="assets/password-manager.jpg" data-background-opacity="0.2">
+					<h2>https://account.zuyd.nl/</h2>
+					<h3>lastpass</h3>
+					<h4>1password</h4>
+					<h5>keepass</h5>
+				</section>
+				<section data-background-image="assets/have-i-been-owned.jpg">
+					<aside class="notes">
+						Shhh, these are your private notes 📝
+					</aside>
+				</section>
+				<section data-background-image="assets/computer-101.jpg">
+					<aside class="notes">
+						<ul>
+							<li>ik zie nog vaak mensen heel inefficient rechtermuis klikken, kopiëren, deleten,
+								rechtermuis klik, plakken</li>
+							<li>Zijn er mensen met een nieuwe laptop/ OS?</li>
+							<li>Hoe zip ik?</li>
+							<li>Wat is de verkenner of finder? </li>
+							<li>Shortcuts om te saven, alttab, afbeeldingen opslaan van internet etc.</li>
+							<li>Er wordt van uit gegaan dat iedereen dat kan, if not, kom dan vooral even op donderdag
+								even binnenlopen.</li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section>
+				<section data-background-image="assets/sleep.jpg">
+					<h2>Are you focussed?</h2>
+				</section>
+				<section data-background-color="#fff" data-background-image="assets/spot-the-difference.png"
+					data-background-size="contain"></section>
+				<section data-background-color="#fffdd7" data-background-image="assets/spot-the-mistake.png"
+					data-background-size="contain"></section>
+				<section data-background-color="#3ac9fe" data-background-image="assets/tshirt.png"
+					data-background-size="contain"></section>
+				<section data-background-color="#faf0dc" data-background-image="assets/guess01.png"
+					data-background-size="contain"></section>
+				<section data-background-color="#faf0dc" data-background-image="assets/guess02.png"
+					data-background-size="contain"></section>
+				<section data-background-color="#faf0dc" data-background-image="assets/guess03.png"
+					data-background-size="contain"></section>
+				<section data-background-color="#faf0dc" data-background-image="assets/guess04.png"
+					data-background-size="contain"></section>
+				<section data-background-color="#faf0dc" data-background-image="assets/guess05.png"
+					data-background-size="contain"></section>
+				<section data-background-color="#faf0dc" data-background-image="assets/guess06.png"
+					data-background-size="contain"></section>
+				<section data-background-color="#faf0dc" data-background-image="assets/guess07.png"
+					data-background-size="contain"></section>
+				<section data-background-color="#faf0dc" data-background-image="assets/guess08.png"
+					data-background-size="contain"></section>
+				<section data-background-color="#faf0dc" data-background-image="assets/guess09.png"
+					data-background-size="contain"></section>
+				<section data-background-color="#faf0dc" data-background-image="assets/guess10.png"
+					data-background-size="contain"></section>
+				<section data-background-color="#faf0dc" data-background-image="assets/guess11.png"
+					data-background-size="contain"></section>
+				<section data-background-color="#faf0dc" data-background-image="assets/guess12.png"
+					data-background-size="contain"></section>
+				<section data-background-color="#faf0dc" data-background-image="assets/guess13.png"
+					data-background-size="contain"></section>
+				<section data-background-color="#faf0dc" data-background-image="assets/guess14.png"
+					data-background-size="contain"></section>
+				<section data-background-color="#faf0dc" data-background-image="assets/guess15.png"
+					data-background-size="contain"></section>
+				<section data-background-color="#faf0dc" data-background-image="assets/guess16.png"
+					data-background-size="contain"></section>
+				<section>
+					<h2>Challenges</h2>
+				</section>
+				<section>
+					<p class="r-fit-text">https://genart.nl/typing/</p>
+				</section>
+				<section data-background-color="#141414" data-background-image="assets/challenge-circle.png"
+					data-background-size="contain" data-background-opacity="0.1">
+					<p class="r-fit-text">https://genart.nl/circle/</p>
+				</section>
+				<section data-background-color="#141414" data-background-image="assets/challenge-click.png"
+					data-background-size="contain" data-background-opacity="0.5">
+					<p class="r-fit-text">https://genart.nl/click/</p>
+				</section>
+				<section>
+					<p class="r-fit-text">https://genart.nl/towers/</p>
+				</section>
+
+			</section>
+
+
+			<!-- ********************************* INHOUDELIJK ********************************* -->
+			<!-- ********************************* INHOUDELIJK ********************************* -->
+			<!-- ********************************* INHOUDELIJK ********************************* -->
+			<!-- ********************************* INHOUDELIJK ********************************* -->
+			<!-- ********************************* INHOUDELIJK ********************************* -->
+
+			<section>
+				<section>
+					<h2>Programma</h2>
+					<img src="assets/programma.png" alt="">
+					<aside class="notes">
+						Het programma van de tutorial technology is gevuld met een aantal weken skills training. Deze
+						opsomming vind je terug in GitBook en dateert nog van vorig jaar, wij gaan wellicht wat stof
+						uitsmeren of 1 of 2 weken langer door met de skills.
+						De lesstof is altijd een work in progress, want ik moet dat ieder jaar afstemmen op de
+						groepsdynamiek. Als jullie snel alles oppikken en elkaar helpen kunnen we meer in de korte tijd
+						behandelen.
+						We beginnen echt met de basis. My first webpage so to speak. Maar we hebben het programma
+						toegespitst op het gebruik van D3 en overbodige topics zijn nice-to-know, kun je zelf altijd nog
+						induiken.
+
+					</aside>
+				</section>
+				<section>
+					<h2>Groepsdynamiek</h2>
+					<img src="assets/groepsdynamiek.jpg" alt="">
+					<aside class="notes">
+						Over groepsdynamiek gesproken, we zijn met een diverse groep studenten.
+						Dat is geen probleem, maar het is wel ieder jaar weer een uitdaging om het voor iedereen
+						interessant genoeg te maken. Andere jaren hadden we een mix van faculteiten en voorkennis, dat
+						is wellicht weer anders voor ons.
+						We lossen dat op door lesstof en opdrachten online te zetten zodat je wanneer jij dat wilt
+						vooruit kunt werken.
+
+					</aside>
+				</section>
+				<section>
+					<h2>Survey</h2>
+					<div class="r-stack">
+						<img class="fragment" src="assets/survey01.png" alt="">
+						<img class="fragment" src="assets/survey02.png" alt="">
+						<img class="fragment" src="assets/survey03.png" alt="">
+						<img class="fragment" src="assets/survey04.png" alt="">
+						<img class="fragment" src="assets/survey05.png" alt="">
+						<img class="fragment" src="assets/survey06.png" alt="">
+						<img class="fragment" src="assets/survey07.png" alt="">
+						<img class="fragment" src="assets/survey08.png" alt="">
+						<img class="fragment" src="assets/survey09.png" alt="">
+						<img class="fragment" src="assets/survey10.png" alt="">
+					</div>
+				</section>
+				<section>
+					<img src="assets/headphones.png" alt="">
+					<aside class="notes">
+						Ik werk vooral met de flipped classroom methode, daarover later meer.
+						Mijn studenten komen vooral naar school om te werken. Neem een headset mee als je tijdens het
+						werkcollege lekker ongestoord verder wil werken
+
+					</aside>
+				</section>
+				<section data-background-color="#cbcbcb">
+					<img src="assets/roses-are-red.jpg" alt="">
+					<aside class="notes">
+						Ik vind humor heel belangrijk. Als we in een ontspannen sfeer samen kunnen werken dan durf je
+						ook méér te vragen. Heel belangrijk! Er zijn geen domme vragen!
+
+
+					</aside>
+				</section>
+				<section data-background-image="assets/teacher-failure.jpg" data-background-size="contain">
+					<aside class="notes">
+						We leren het beste als we onze eigen fouten oplossen.
+
+						Ik heb buiten mijn reguliere lestijden extra uren om studenten te begeleiden. Ik wil benadrukken
+						dat dat alleen voor mij geldt: het is geen gemeengoed dat een docent buiten lestijden nog vaak
+						en snel reageert op vragen.
+						Vooral bij nieuwe programmeer talen kan het wel eens frustrerend zijn als je al uren naar je
+						code zit te turen en er niet uitkomt, dat is zonde van je tijd.
+						Google, zoek hulp bij medestudenten en als je er dan niet uitkomt, stuur je mij een chatbericht
+						in Teams. Als je teveel vraagt hoor je t wel van mij.
+						ALs je 20 minuten probeert en er niet uitkomt, ga je wat anders doen.
+
+
+					</aside>
+				</section>
+				<section data-background-color="#fff" data-background-image="assets/mmt-live.png"
+					data-background-size="contain">
+					<aside class="notes">
+						Haha Rianne, remind me dat ik nog een 8bit versie van jou moet maken  Links is een andere
+						collega van mij.
+						We kunnen ook live sessies coding buiten de reguliere lestijden doen. Dat kunnen we plannen en
+						regelen mits daar vraag naar is, laat me dat dus weten!
+
+
+					</aside>
+				</section>
+				<section data-background-color="#fff" data-background-image="assets/copying-code.png"
+					data-background-size="contain">
+					<aside class="notes">
+						wat vinden we hiervan?
+
+						Heel veel oplossingen zijn een paar muiskliks van je verwijderd, hetzij bij de buurman of vrouw,
+						hetzij online.
+						ChatGPT anyone? :)
+
+						We sporen je aan dat als laatste redmiddel in te zetten en master te worden in googlen (lees: de
+						juiste keywords zoeken. Tip: google in het Engels).
+
+						Maak álle oefeningen!
+
+					</aside>
+				</section>
+				<section data-background-color="#f16623" data-background-image="assets/monitoring.jpg"
+					data-background-size="contain">
+					<aside class="notes">
+
+						We monitoren je progressie middels je aanwezigheid en ingeleverde opdrachten
+						We toetsen dus formatief. Zorg dat je op onze radar blijft en je frequent om feedback vraagt.
+						Voor de studenten die al verder zijn: wees iedere week aanwezig. Op design gebied heb je vast
+						nog iets te leren, en wellicht op techniek gebied ook. En nog belangrijker je kunt anderen
+						helpen.
+						Je kunt vooruit werken, opdrachten staan in GitBook.
+
+					</aside>
+				</section>
+				
+				<section data-background-color="#0e0e0e" data-background-image="assets/flipped-classroom.png"
+					data-background-size="contain">
+					<aside class="notes">
+						Flipped classroom
+						Voorbeeld MMT in GitBook laten zien
+
+
+
+					</aside>
+				</section>
+				<section data-background-image="assets/d3.png" data-background-size="contain"></section>
+				<section>
+					<h2>Waarom D3?</h2>
+					<img src="assets/popular-languages.png" alt="">
+					<aside class="notes">
+						Waarom behandelen we juist webscripting?
+						Je kunt data snel bewerken alvorens je het eindwerk wellicht afmaakt met de hand
+						Het is interactief (een gebruiker kan klikken je kunt dus meer informatie compacter weergeven)
+						Het is online beschikbaar, dus makkelijk deelbaar
+						Je kunt web API’s gebruiken, zodat je project realtime met dynamische data werkt
+						D3 is een library in javascript waarmee we heel snel SVG’s kunnen maken die data driven zijn,
+						animeren én interactief zijn
+						We leren echt de basics. Het is aan jezelf om te exploreren en de écht vette dingen te maken.
+
+
+					</aside>
+				</section>
+				<section>
+					<h2>Eindopdracht is interactief</h2>
+					<aside class="notes">
+						In samenspraak met je coaches tik je af wat je gaat maken. Zonder techniek wordt het lastig iets
+						interactiefs te maken, bijvoorbeeld een online webpage waar de klant zelf aan de knoppen kan
+						draaien.
+
+						De beschrijving van het eindwerk is beschreven in Moodle.
+						Je bent niet verplicht D3 te gebruiken in je eindwerk, maar als het goed is zie je wel het nut
+						ervan in om te kunnen prototypen of om een interactieve website te kunnen maken.
+						Het mag ook met andere technieken, maar overleg dat vooral met mij. PowerBI is bijvoorbeeld niet
+						de bedoeling.
+						
+						Een interactieve website is dan dus én deelbaar én heel bruikbaar voor de klant.
+
+					</aside>
+				</section>
+				<section data-background-image="assets/example-sun-huge.png" data-background-size="contain">
+					<aside class="notes">2 voorbeelden van posters, met een net andere invalshoek.</aside>
+				</section>
+				<section data-background-image="assets/example-you-small.png" data-background-size="contain"></section>
+				<section data-background-image="assets/women-in-space.png" data-background-size="contain"
+					data-background-opacity="0.5">
+					<p class="r-fit-text">https://observablehq.com/@ralucanicola/women-in-space</p>
+					<aside class="notes">
+						het waren enkel posters. In een online site zou er interactiviteit moeten terugkomen.
+					</aside>
+				</section>
+				<section data-background-color="#fff">
+					<img src="assets/platform-gitbook.png" alt="">
+					<p class="r-fit-text">https://cmd-viscom.gitbook.io/</p>
+					<aside class="notes">We gebruiken GitBook voor het plaatsen van de lesstof en opdrachten. Niet te
+						verwarren met GitHub. GitBook is bedoelt voor documentatie.
+						Bookmark deze pagina. Daar vind je algemene links naar uitleg over GitHub maar ook de link naar
+						de minor omgeving. Ik zal hem ook nog toevoegen aan de teams omgeving</aside>
+				</section>
+				<section data-background-image="assets/bad-version-control.png" data-background-size="contain">
+					<aside class="notes">Als je ooit al eens geprogrammeerd hebt, of uberhaupt een Word bestand hebt
+						gemaakt, zul je dit vast wel herkennen. Je weet op den duur niet eens meer welke versie de
+						juiste is.
+					</aside>
+				</section>
+				<section data-background-image="assets/github-commit-history.png" data-background-size="contain">
+					<aside class="notes">
+						Studenten die GitHub al hebben gebruikt snappen het grapje
+
+					</aside>
+				</section>
+				<section data-background-image="assets/github-contribution.png" data-background-size="contain">
+					<aside class="notes">
+						Wat je net zag waren badkamer tegeltjes die lijken op de visual die je ziet als je veel in
+						GitHub werkt. Je ziet, in juli en augustus heb ook ík een leven!
+
+
+					</aside>
+				</section>
+				<section data-background-color="#fff">
+					<img src="assets/platform-github.png" alt="">
+
+					<aside class="notes">
+						Daarom gaan we GitHub gebruiken
+
+						Je levert je opdrachten in via GitHub
+						Deze opdrachten staan ook in GitHub en worden automatisch aangemaakt voor jullie via GitHub
+						Classroom als je ze accepteert
+						Bestanden in GitHub zijn dus ook meteen ‘gebackupped’
+						Maar het is vooral bedoelt om versie beheer te creeren voor je bestanden, zodat je altijd nog
+						terug kunt naar een vorige versie.
+						GitHub is het grootste open source / coding community platform ter wereld. Je gaat er zeker code
+						voorbeelden tegenkomen die je kunt gebruiken.
+
+						We gaan het in stappen lere, we hebben het hele GitHub proces opgesplitst in een paar
+						opdrachten. Even kijken of we daar vandaag aan toekomen.
+
+					</aside>
+				</section>
+				<section data-background-color="#fff" data-background-image="assets/github-swag.png"
+					data-background-size="contain">
+					<aside class="notes">
+						Onder de studenten die goed hun best doen of die challenges winnen, verloten we GitHub Gift
+						Codes waarmee je een van deze t-shirts gratis kunt krijgen (zelfs shipping is gratis).
+					</aside>
+				</section>
+				<section data-background-color="#fff" data-background-image="assets/github-monitoring.png"
+					data-background-size="contain">
+					<aside class="notes">
+						We gebruiken GitHub dus om de opdrachten in in te leveren. Ik heb die flow geautomatiseerd en
+						programma’s ontwikkeld die de status per student tonen.
+					</aside>
+				</section>
+				<section data-background-color="#fff" data-background-image="assets/github-monitoring-kay.png"
+					data-background-size="contain">
+					<aside class="notes">
+						Je kunt me dus ook altijd om een up to date status vragen, die stuur ik je dan prive in Teams.
+					</aside>
+				</section>
+				<section data-background-color="#fff" data-background-image="assets/github-pr.png"
+					data-background-size="contain">
+					<aside class="notes">
+						Ik kijk álle werkjes in GitHub na. Maar omdat dat nogal wat werk is en er vaak dezelfde fouten
+						worden gemaakt, heb ik een tooltje gemaakt dat standaard replies kan sturen. Dont shoot the
+						messenger.
+
+					</aside>
+				</section>
+
+			</section>
+			<section>
+				<img class="r-stretch" src="assets/coffee.jpg" alt="">
+				<p>A maths meme that is actually funny rather than stupid: Solve carefully!</p>
+				<p>230 - 220 x 0.5 =</p>
+				<p>You probably won't believe it but the answer is 5!</p>
+			</section>
+
+			<section>
+
+				<section data-background-image="assets/internet.jpg">
+					<h2>Intro and web basics</h2>
+					<aside class="notes">
+
+						<pre>
+Wat hebben we nodig om iets op internet te krijgen?
+Wordpress, Wix
+Clientside code (Html, css, javascript)
+Serverside code (Php, nodejs, .Net)
+FTP
+Database
+								</pre>
+
+					</aside>
+				</section>
+				<section data-background-image="assets/hosting.jpg" data-background-opacity="0.5">
+					<h2>Hosting</h2>
+					<h6 class="fragment">Domein € 10,- per jaar</h6>
+					<h6 class="fragment">Hosting € 10,- per maand</h6>
+					<h6 class="fragment">https://www.transip.nl/ </h4>
+						<ul class="fragment">
+							<li>domein € 1,20 per jaar</li>
+							<li>hosting € 2,40 per maand</li>
+						</ul>
+
+						<h6 class="fragment">GitHub Pages (static content)</h4>
+							<aside class="notes">
+
+							</aside>
+				</section>
+				<section data-background-color="#fff">
+					<img class="r-stretch" src="assets/platform-vscode.png" alt="">
+					<p class="r-fit-text">https://code.visualstudio.com/</p>
+					<aside class="notes">Voor de mensen die VSCode nog niet geinstalleerd hebben, ga naar deze URL en
+						installeer VSCode.
+						Nogmaals, als je al een andere editor gebruikt vind ik dat prima, maar weet dat alle voorbeelden
+						en tutorials gemaakt zijn in VSCode.
+						In VSCode kun je ook een plugin Live Share installeren waarmee je met meerdere personen in
+						hetzelfde project in realtime kunt werken. Kan handig zijn, al zal het beeldscherm delen vaak
+						sneller werken.
+					</aside>
+				</section>
+				<section data-background-color="#000">
+					<img class="r-stretch" src="assets/press-the-dot.png" alt="">
+
+					<aside class="notes">ga eens naar github.com/vincentsijben en klik op een repo.
+						github.dev</aside>
+				</section>
+				<section data-background-color="#000">
+					<img class="r-stretch" src="assets/vscode-extension.jpg" alt="">
+					<aside class="notes">Installeer de Live Server extension.</aside>
+				</section>
+				<section data-background-color="#000">
+					<img class="r-stretch" src="assets/semantics.jpg" alt="">
+					<aside class="notes">Wat is semantiek?</aside>
+				</section>
+				<section data-background-color="#000">
+					<img class="r-stretch" src="assets/html5.jpg" alt="">
+					<aside class="notes">We gaan de basics van HTML en CSS leren
+						Iedereen projectmap maken
+						
+						Een van de opties bij de enquete was “ik vind mn weg via Google”. En dat is voor de huidige ontwikkelaar eigenlijk wel een bekend fenomeen. We leren niet meer (veel) uit boeken, maar googlen.
+						
+						Laten we een simple en vrij leeg html document samen bouwen.
+						Link tag HTML voorbeeld.
+						
+						Uitleg html opbouw, css opbouw
+						Html attributen, css linken
+						Reset css (want standaard opmaak door de browser)
+						Afbeeldingen toevoegen
+						Hyperlinks toevoegen
+						Youtube iframe
+						Google maps iframe
+						</aside>
+				</section>
+				<section>
+					<h2>ID's and classes</h2>
+					<ul>
+						<li>ID (#name): unique
+						</li>
+						<li>Class (.name): group of elements that behave the same way
+						</li>
+					</ul>
+					<p>IDs always override classes!
+					</p>
+				</section>
+			</section>
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
