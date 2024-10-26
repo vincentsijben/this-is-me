@@ -13,6 +13,19 @@
 
 	<!-- Theme used for syntax highlighted code -->
 	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	<style>
+		.fragment.blur {
+		  filter: blur(10px);
+		  opacity: 1 !important;
+		  visibility: visible !important;
+		}
+		.fragment.blur.visible {
+		  filter: none;
+		}
+		.fragment.blur.current-fragment {
+  filter: none;
+}
+	  </style>
 </head>
 
 <body>
@@ -925,38 +938,138 @@ hoe gebruiken we a.i. binnen MMT.
 					</aside>
 				</section>
 
+				<section>
+					<img class="r-stretch" src="assets/ai-pope-wearing-balenciaga-jacket.jpeg" alt="">
+					<blockquote>
+						AI-generated image of the Pope wearing a Balenciaga jacket
+					</blockquote>
+
+					<aside class="notes">
+						<pre>
+							Pablo Xavier, a 31-year-old construction worker from the Chicago area who declined to share his last name over fears that he could be attacked for creating the images, said he was tripping on shrooms last week when he came up with the idea for the image.
+						</pre>
+					</aside>
+				</section>
+
+				<section>
+					<img class="r-stretch" src="assets/ai-colorado-art.jpg" alt="">
+					<blockquote>"Jason Allen via Midjourney" won $300 for 1st place at Colorado State Fair's annual art
+						competition.</blockquote>
+				</section>
+
 				<section data-background-color="#000">
-					<video controls data-autoplay src="assets/edwins.online-pig-fish-720p.mp4"></video>
+					<video controls loop data-autoplay src="assets/edwins.online-pig-fish-720p.mp4"></video>
+					<a href="https://www.instagram.com/reel/C98cVhDS27Y/">@edwins.online</a>
 					<aside class="notes">AI video</aside>
 				</section>
-				<section data-background-color="#000">
-					<video controls loop data-autoplay src="assets/edwins.online-hawk-tuah-720p.mp4"></video>
-					<aside class="notes">AI video</aside>
-				</section>
+
 				<section data-background-color="#000">
 					<video controls loop data-autoplay src="assets/bennettwaisbren-bee-720p.mp4"></video>
+					<a href="https://www.instagram.com/p/C92MKNix7j2/">@bennettwaisbren</a>
+					<aside class="notes">AI video</aside>
+				</section>
+				<section data-background-color="#000">
+					<video controls loop data-autoplay src="assets/dr_formalyst-fingers-720p.mp4"></video>
+					<a href="https://www.instagram.com/reel/C4itzFrthqt/">@dr_formalyst</a>
 					<aside class="notes">AI video</aside>
 				</section>
 				<section data-background-color="#000">
 					<video controls loop data-autoplay src="assets/bennettwaisbren-mario-720p.mp4"></video>
+					<a href="https://www.instagram.com/reel/DBjFPVQRhzE/">@bennettwaisbren</a>
 					<aside class="notes">AI video</aside>
 				</section>
 				<section data-background-color="#000">
-					<img class="r-stretch" src="assets/semantics.jpg" alt="">
-					<aside class="notes">Wat is semantiek?</aside>
+					<video controls loop data-autoplay src="assets/bennettwaisbren-hawk-tuah-720p.mp4"></video>
+					<a href="https://www.instagram.com/reel/DBL6KbzPadU/">@bennettwaisbren</a>
+					<aside class="notes">AI video</aside>
+				</section>
+				<section data-background-color="#000">
+					<video controls loop data-autoplay src="assets/ai-celebrity-mortal-kombat-2024-edition.mp4"></video>
+					<a href="https://www.youtube.com/watch?v=DjYfFDvtZ5s">Interdimensional TV</a>
+					<aside class="notes">AI video</aside>
+				</section>
+
+
+
+
+
+				<section data-background-color="#000">
+
+					<img src="assets/mmt2-opdracht-1.png" alt="">
+					<h1>MMT2 opdracht 1</h1>
+
+				</section>
+				<section data-background-color="#000">
+					<p class="r-fit-text">
+
+						Geef me de oplossing voor een opdracht in P5js. Toon 8 vierkanten. 4 boven, 4 beneden.
+						In de bovenste rij heeft ieder
+						vierkant een andere felle kleur en geen rand, in de onderste rij een grijstint van wit
+						(links) tot zwart (rechts) met een rand.
+					</p>
+				</section>
+				<section data-background-color="#000">
+					<div class="r-fit-text">
+						<img src="assets/mmt2-opdracht1-chatgpt-oplossing-1.png" alt="">
+						<ul>
+							<li>Probleem: je moet super expliciet zijn, anders kloppen de kleuren en layout niet
+							</li>
+							<li>Oplossing: "... de vierkanten moeten 50x50 pixels worden en de ruimte om iedere
+								pixel is
+								ook 50pixels. Geef het canvas een grijze achtergrond."</li>
+						</ul>
+					</div>
+				</section>
+				<section data-background-color="#000">
+					<div class="r-fit-text">
+						<img src="assets/mmt2-opdracht1-chatgpt-oplossing-2.png" alt="">
+						<ul>
+							<li>Probleem: de oplossing bevat concepten die we nog niet behandeld hebben (arrays en
+								loops).</li>
+							<li>Oplossing: "... pas de code aan zodat geen arrays of loops worden gebruikt."</li>
+						</ul>
+					</div>
+
+				</section>
+				<section data-background-color="#000">
+				<div class="r-fit-text">
+					<img style="height: 40vh" src="assets/mmt2-opdracht1-chatgpt-oplossing-3.png" alt="">
+					<h2>Maar wat hebben we nu geleerd?</h2>
+					<ol>
+						<li class="fragment custom blur">Je leert enkel goed de opdracht omschrijven, je leert
+							niet hoe je het zelf moet
+							oplossen.</li>
+						<li class="fragment custom blur">Je leert niet hoe je de code moet schrijven.</li>
+						<li class="fragment custom blur">Je leert niet hoe je de code moet debuggen.</li>
+					</ol>
+				</div>
+				</section>
+				
+				<section >
+				
+					<h2>Wat wil ik dan wel?</h2>
+					<p class="fragment custom blur">"... Geef me niet de complete oplossing. Zorg ervoor dat ik het
+						zelf kan oplossen."</p>
+					<p class="fragment custom blur">"... Leg het uit alsof ik 10 ben."</p>
+					<p class="fragment custom blur">"Help me stap voor stap het concept van variabelen in p5js te
+						begrijpen. Geef me een instructie, laat me de code schrijven, controleer mijn antwoord en ga pas
+						door naar de volgende stap als het goed is."</p>
+	
+					<aside class="notes">Tips A.I. gebruik</aside>
+	
 				</section>
 				<section data-background-color="#000">
 					<img class="r-stretch" src="assets/html5.jpg" alt="">
 					<aside class="notes">We gaan de basics van HTML en CSS leren
 						Iedereen projectmap maken
-
+	
 						Een van de opties bij de enquete was “ik vind mn weg via Google”. En dat is voor de huidige
 						ontwikkelaar eigenlijk wel een bekend fenomeen. We leren niet meer (veel) uit boeken, maar
 						googlen.
-
+	
 						Laten we een simple en vrij leeg html document samen bouwen.
 						Link tag HTML voorbeeld.
-
+	
 						Uitleg html opbouw, css opbouw
 						Html attributen, css linken
 						Reset css (want standaard opmaak door de browser)
@@ -967,6 +1080,7 @@ hoe gebruiken we a.i. binnen MMT.
 					</aside>
 				</section>
 			</section>
+			
 		</div>
 	</div>
 
