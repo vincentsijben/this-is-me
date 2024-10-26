@@ -15,17 +15,19 @@
 	<link rel="stylesheet" href="plugin/highlight/monokai.css">
 	<style>
 		.fragment.blur {
-		  filter: blur(10px);
-		  opacity: 1 !important;
-		  visibility: visible !important;
+			filter: blur(10px);
+			opacity: 1 !important;
+			visibility: visible !important;
 		}
+
 		.fragment.blur.visible {
-		  filter: none;
+			filter: none;
 		}
+
 		.fragment.blur.current-fragment {
-  filter: none;
-}
-	  </style>
+			filter: none;
+		}
+	</style>
 </head>
 
 <body>
@@ -927,34 +929,35 @@ Database
 			</section>
 			<section>
 
-				<section data-background-image="assets/internet.jpg">
+				<section data-background-opacity="0.2" data-background-image="assets/dall-e-2.jpeg">
 					<h2>A.I.</h2>
-					<aside class="notes">
-
-						<pre>
-hoe gebruiken we a.i. binnen MMT.
-								</pre>
-
-					</aside>
 				</section>
-
-				<section>
+				<section data-background-opacity="0.2" data-background-image="assets/dall-e-3.jpeg">
+					<p>A.I. technologie groeit exponentieel. Wat vandaag niet mogelijk is, kan morgen wel. </p>
+				</section>
+				<section data-background-opacity="0.2" data-background-image="assets/dall-e-4.jpeg">
+					<p>Waar gebruiken we A.I. nu vooral voor?</p>
+				</section>
+				<section data-background-opacity="0.2" data-background-image="assets/dall-e-1.jpeg">
+					<p>"Schrijf 10 vragen die ik kan stellen als ik een professionele webdesigner ga interviewen."</p>
+				</section>
+				<section data-background-opacity="0.2" data-background-image="assets/dall-e-5.jpeg">
 					<img class="r-stretch" src="assets/ai-pope-wearing-balenciaga-jacket.jpeg" alt="">
 					<blockquote>
 						AI-generated image of the Pope wearing a Balenciaga jacket
 					</blockquote>
 
 					<aside class="notes">
-						<pre>
-							Pablo Xavier, a 31-year-old construction worker from the Chicago area who declined to share his last name over fears that he could be attacked for creating the images, said he was tripping on shrooms last week when he came up with the idea for the image.
-						</pre>
+						Pablo Xavier, a 31-year-old construction worker from the Chicago area who declined to share his
+						last name over fears that he could be attacked for creating the images, said he was tripping on
+						shrooms last week when he came up with the idea for the image.
 					</aside>
 				</section>
 
-				<section>
+				<section data-background-opacity="0.2" data-background-image="assets/dall-e-5.jpeg">
 					<img class="r-stretch" src="assets/ai-colorado-art.jpg" alt="">
-					<blockquote>"Jason Allen via Midjourney" won $300 for 1st place at Colorado State Fair's annual art
-						competition.</blockquote>
+					<blockquote>"Jason Allen via Midjourney" won $300 at Colorado State Fair's annual art competition
+						(ranked 1st).</blockquote>
 				</section>
 
 				<section data-background-color="#000">
@@ -988,33 +991,27 @@ hoe gebruiken we a.i. binnen MMT.
 					<a href="https://www.youtube.com/watch?v=DjYfFDvtZ5s">Interdimensional TV</a>
 					<aside class="notes">AI video</aside>
 				</section>
-
-
-
-
-
 				<section data-background-color="#000">
-
 					<img src="assets/mmt2-opdracht-1.png" alt="">
 					<h1>MMT2 opdracht 1</h1>
-
 				</section>
 				<section data-background-color="#000">
-					<p class="r-fit-text">
-
-						Geef me de oplossing voor een opdracht in P5js. Toon 8 vierkanten. 4 boven, 4 beneden.
+					<p>
+						"Geef me de oplossing voor een opdracht in P5js. Toon 8 vierkanten. 4 boven, 4 beneden.
 						In de bovenste rij heeft ieder
 						vierkant een andere felle kleur en geen rand, in de onderste rij een grijstint van wit
-						(links) tot zwart (rechts) met een rand.
+						(links) tot zwart (rechts) met een rand."
 					</p>
 				</section>
 				<section data-background-color="#000">
 					<div class="r-fit-text">
 						<img src="assets/mmt2-opdracht1-chatgpt-oplossing-1.png" alt="">
 						<ul>
-							<li>Probleem: je moet super expliciet zijn, anders kloppen de kleuren en layout niet
+							<li class="fragment custom blur">Probleem: je moet super expliciet zijn, anders kloppen de
+								kleuren en layout niet
 							</li>
-							<li>Oplossing: "... de vierkanten moeten 50x50 pixels worden en de ruimte om iedere
+							<li class="fragment custom blur">Oplossing: "... de vierkanten moeten 50x50 pixels worden en
+								de ruimte om iedere
 								pixel is
 								ook 50pixels. Geef het canvas een grijze achtergrond."</li>
 						</ul>
@@ -1024,16 +1021,21 @@ hoe gebruiken we a.i. binnen MMT.
 					<div class="r-fit-text">
 						<img src="assets/mmt2-opdracht1-chatgpt-oplossing-2.png" alt="">
 						<ul>
-							<li>Probleem: de oplossing bevat concepten die we nog niet behandeld hebben (arrays en
+							<li class="fragment custom blur">Probleem: opeens andere kleuren en de oplossing bevat
+								concepten die we nog niet behandeld hebben (arrays en
 								loops).</li>
-							<li>Oplossing: "... pas de code aan zodat geen arrays of loops worden gebruikt."</li>
+							<li class="fragment custom blur">Oplossing: "... pas de code aan zodat geen arrays of loops
+								worden gebruikt."</li>
 						</ul>
 					</div>
 
 				</section>
 				<section data-background-color="#000">
-				<div class="r-fit-text">
-					<img style="height: 40vh" src="assets/mmt2-opdracht1-chatgpt-oplossing-3.png" alt="">
+					<div class="r-fit-text">
+						<img src="assets/mmt2-opdracht1-chatgpt-oplossing-3.png" alt="">
+					</div>
+				</section>
+				<section data-background-color="#000">
 					<h2>Maar wat hebben we nu geleerd?</h2>
 					<ol>
 						<li class="fragment custom blur">Je leert enkel goed de opdracht omschrijven, je leert
@@ -1042,45 +1044,58 @@ hoe gebruiken we a.i. binnen MMT.
 						<li class="fragment custom blur">Je leert niet hoe je de code moet schrijven.</li>
 						<li class="fragment custom blur">Je leert niet hoe je de code moet debuggen.</li>
 					</ol>
-				</div>
 				</section>
-				
-				<section >
-				
+
+				<section>
 					<h2>Wat wil ik dan wel?</h2>
-					<p class="fragment custom blur">"... Geef me niet de complete oplossing. Zorg ervoor dat ik het
-						zelf kan oplossen."</p>
-					<p class="fragment custom blur">"... Leg het uit alsof ik 10 ben."</p>
-					<p class="fragment custom blur">"Help me stap voor stap het concept van variabelen in p5js te
-						begrijpen. Geef me een instructie, laat me de code schrijven, controleer mijn antwoord en ga pas
-						door naar de volgende stap als het goed is."</p>
-	
-					<aside class="notes">Tips A.I. gebruik</aside>
-	
 				</section>
-				<section data-background-color="#000">
-					<img class="r-stretch" src="assets/html5.jpg" alt="">
-					<aside class="notes">We gaan de basics van HTML en CSS leren
-						Iedereen projectmap maken
-	
-						Een van de opties bij de enquete was “ik vind mn weg via Google”. En dat is voor de huidige
-						ontwikkelaar eigenlijk wel een bekend fenomeen. We leren niet meer (veel) uit boeken, maar
-						googlen.
-	
-						Laten we een simple en vrij leeg html document samen bouwen.
-						Link tag HTML voorbeeld.
-	
-						Uitleg html opbouw, css opbouw
-						Html attributen, css linken
-						Reset css (want standaard opmaak door de browser)
-						Afbeeldingen toevoegen
-						Hyperlinks toevoegen
-						Youtube iframe
-						Google maps iframe
-					</aside>
+				<section>
+					<p class="r-fit-text">"... Geef me niet de complete oplossing. Zorg ervoor dat ik het zelf kan
+						oplossen."</p>
+					<p class="stretch"><img src="assets/mmt2-opdracht1-chatgpt-oplossing-4.png" alt=""></p>
+				</section>
+				<section>
+					<p class="r-fit-text">"... Leg het uit alsof ik 10 ben."</p>
+					<p class="stretch"><img src="assets/mmt2-opdracht1-chatgpt-oplossing-5.png" alt=""></p>
+				</section>
+				<section>
+					<p class="r-fit-text">"Help me stap voor stap het concept van gekleurde vierkanten in p5js te
+						begrijpen. Geef me een instructie, laat me de code schrijven, controleer mijn antwoord en ga pas
+						door naar de volgende stap als het goed is. Geef zelf geen complete antwoorden."</p>
+					<p class="stretch"><img src="assets/mmt2-opdracht1-chatgpt-oplossing-6.png" alt=""></p>
+					<aside class="notes">Tips A.I. gebruik</aside>
+				</section>
+				<section>
+					<h1>GitHub CoPilot</h1>
+					<p class="r-fit-text">(gratis via GitHub Educatino Pack, anders $100 per jaar)</p>
+				</section>
+				<section>
+					<p class="r-fit-text">installeer CoPilot als extensie binnen VSCode (zoek op "copilot")</p>
+					<p class="stretch">
+						<img src="assets/github-copilot-1.png" alt="">
+					</p>
+					<p class="r-fit-text">geef toestemming via je GitHub account als daarom gevraagd wordt</p>
+				</section>
+				<section>
+					<p>Standaard staat "code completion" aan.</p>
+					<p>Tijdens het leren van p5js is dat niet slim, alle code wordt immers voorgeschoteld.</p>
+					<p>
+						<img src="assets/github-copilot-4.png" alt="">
+					</p>
+				</section>
+				<section>
+					<h1 class="r-fit-text">disable code completions</h1>
+					<p><img src="assets/github-copilot-2.png" alt=""></p>
+					<p><img src="assets/github-copilot-3.png" alt=""></p>
+				</section>
+				<section>
+					<h1 class="r-fit-text">Gebruik vooral de chat functie als je vastzit</h1>
+					<p class="stretch">
+						<img src="assets/github-copilot-5.png" alt="">
+					</p>
 				</section>
 			</section>
-			
+
 		</div>
 	</div>
 
